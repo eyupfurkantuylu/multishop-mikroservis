@@ -1,0 +1,67 @@
+## Build output
+bin/
+obj/
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+
+## Visual Studio Code
+.vscode/
+
+## Backup & Logs
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.tmp
+*.tmp_proj
+*.pidb
+*.svclog
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Paket önbellekleri
+*.nuget.props
+*.nuget.targets
+
+# Rider IDE
+.idea/
+
+## OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+
+## Publish outputs
+*.Publish.xml
+publish/
+out/
+
+## Entity Framework
+Migrations/
+
+## Azure Functions
+local.settings.json
+
+## Others
+launchSettings.json
