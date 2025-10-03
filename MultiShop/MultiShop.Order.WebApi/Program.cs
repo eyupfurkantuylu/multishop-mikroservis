@@ -2,6 +2,7 @@ using MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers;
 using MultiShop.Order.Application.Features.CQRS.Handlers.OrderDeteailHandlers;
 using MultiShop.Order.Application.Interfaces;
 using MultiShop.Order.Application.Services;
+using MultiShop.Order.Persistence.Context;
 using MultiShop.Order.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,7 @@ builder.Services.AddScoped<RemoveOrderDetailCommandHandler>();
 #endregion
 
 #region MediatR registration
+builder.Services.AddDbContext<OrderContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddApplicationService(builder.Configuration);
 #endregion
