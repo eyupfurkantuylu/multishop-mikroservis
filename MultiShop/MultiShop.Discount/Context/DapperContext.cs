@@ -17,7 +17,7 @@ public class DapperContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=MultiShopDiscountDb;User Id=sa;Password=Password123*;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=localhost,1436;Database=MultiShopDiscountDb;User Id=sa;Password=Password123*;TrustServerCertificate=True;");
     }
     public DbSet<Coupon> Coupons { get; set; }
     public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
