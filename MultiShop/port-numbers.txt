@@ -1,0 +1,3 @@
+IdentityServer	-> 5001
+Catalog			-> 7072
+Discount		-> 7071
